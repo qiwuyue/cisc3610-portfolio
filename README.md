@@ -9,7 +9,7 @@
 
 
 <ul>
-  <li><a href="assignments/a1/">Assignment 1</a></li>
+  <li><a href="assignment/a1/">Assignment 1</a></li>
 </ul>
 </body>
 </html>
