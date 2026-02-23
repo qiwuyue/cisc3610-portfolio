@@ -1,9 +1,5 @@
 # cisc3610-portfolio
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>CISC 3610 Portfolio</title>
-</head>
+
 <body>
 
 
