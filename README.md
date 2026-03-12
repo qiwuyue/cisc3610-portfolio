@@ -6,7 +6,7 @@
 <p><b>Email:</b> q706672186@outlook.com</p>
 
 <ul>
-  <li><a href="cisc3610-portfolio\Canvas">Cartoon</a></li>
+  <li><a href="cisc3610-portfolio\Canvas\index.html">Cartoon</a></li>
 </ul>
 </body>
 </html>
