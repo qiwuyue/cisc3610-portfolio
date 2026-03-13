@@ -6,7 +6,8 @@
 <p><b>Email:</b> q706672186@outlook.com</p>
 
 <ul>
-  <li><a href="https://qiwuyue.github.io/cisc3610-portfolio/Canvas/cartoon.html">Cartoon</a></li>
+  <li><a href="https://qiwuyue.github.io/cisc3610-portfolio/Canvas/cartoon.html">Cartoon</a>
+  <a href="https://qiwuyue.github.io/cisc3610-portfolio/Multimedia Dictionary/index.html">Multimedia Dictionary</a></li>
 </ul>
 </body>
 </html>

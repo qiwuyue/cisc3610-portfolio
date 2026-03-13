@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">      
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multimedia Dictionary</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <h1>Multimedia Dictionary</h1>
+        <div class="word">
+            <select id="wordSelect" onchange="display()">
+                <option value="">Select a word</option>
+                <option value="serendipity" data-sentence="A fortunate discovery made by accident.">Serendipity</option>
+                <option value="ephemeral" data-sentence="Lasting for a very short time.">Ephemeral</option>
+                <option value="luminous" data-sentence="Emitting or reflecting light.">Luminous</option>
+            </select>
+            <button id="playWordButton" onclick="speakWord()">Speak word</button>
+
+        </div>
+        <div class="sentence">
+            <textarea id="text" readonly></textarea>
+            <button id="playSentenceButton" onclick="speakSentence()">Speak sentence</button>
+
+        </div>
+    </body> 
+
+
+
+</html>
