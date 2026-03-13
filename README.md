@@ -7,6 +7,7 @@
 
 <ul>
   <li><a href="https://qiwuyue.github.io/cisc3610-portfolio/Canvas/cartoon.html">Cartoon</a>
+  <br>
   <a href="https://qiwuyue.github.io/cisc3610-portfolio/Multimedia Dictionary/index.html">Multimedia Dictionary</a></li>
 </ul>
 </body>
