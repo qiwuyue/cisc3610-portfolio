@@ -37,6 +37,12 @@ function draw() {
   ctx.arc(canvas.width - 180, 180, 110, 0, Math.PI * 2);
   ctx.fillStyle = glow;
   ctx.fill();
+
+  //caption text
+  ctx.font = "bold 40px serif";
+  ctx.textAlign = "center";
+  ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
+  ctx.fillText("A Peaceful Day", canvas.width / 2, 80);
 }
 //fill 0 to single digit numbers for better time display
 function pad(n) {
