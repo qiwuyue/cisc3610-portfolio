@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Piano",
+    "category": "Keyboard",
+    "text": "The piano is a keyboard instrument that produces sound when keys are pressed.",
+    "image": "images/piano.png",
+    "audio": "audio/piano.wav",
+    "fact": "A standard piano has 88 keys."
+  },
+  {
+    "id": 2,
+    "title": "Guitar",
+    "category": "String",
+    "text": "The guitar is a string instrument usually played by strumming or plucking the strings.",
+    "image": "images/guitar.png",
+    "audio": "audio/guitar.wav",
+    "fact": "Most standard guitars have six strings."
+  },
+  {
+    "id": 3,
+    "title": "Violin",
+    "category": "String",
+    "text": "The violin is a small string instrument played with a bow.",
+    "image": "images/violin.png",
+    "audio": "audio/violin.wav",
+    "fact": "The violin is one of the highest-pitched string instruments."
+  },
+  {
+    "id": 4,
+    "title": "Drum",
+    "category": "Percussion",
+    "text": "The drum is a percussion instrument played by striking its surface.",
+    "image": "images/drum.png",
+    "audio": "audio/drum.wav",
+    "fact": "Drums help keep rhythm in music."
+  },
+  {
+    "id": 5,
+    "title": "Flute",
+    "category": "Woodwind",
+    "text": "The flute is a woodwind instrument that produces sound when air flows across the opening.",
+    "image": "images/flute.png",
+    "audio": "audio/flute.wav",
+    "fact": "The flute is one of the oldest musical instruments."
+  }
+]
