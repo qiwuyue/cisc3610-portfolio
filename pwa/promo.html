@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument Explorer Promo</title>
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell promo-shell">
+    <header class="promo-hero">
+      <div class="promo-copy">
+        <p class="eyebrow">Progressive Web App</p>
+        <h1>Instrument Explorer</h1>
+        <p class="subtitle">
+          A music learning app that helps users explore instruments through short lessons,
+          curated images, and audio examples.
+        </p>
+        <div class="promo-actions">
+          <a class="install-button promo-link" href="index.html">Open Web App</a>
+          <a class="secondary-link" href="#install">Install Instructions</a>
+          <a class="secondary-link" href="documentation.html">Documentation</a>
+        </div>
+      </div>
+
+      <div class="promo-icon-card" aria-label="Instrument Explorer app icon">
+        <img src="icon-192.png" alt="Instrument Explorer music note icon">
+      </div>
+    </header>
+
+    <section class="promo-section">
+      <div class="section-heading">
+        <p class="eyebrow">Screenshots</p>
+        <h2>Learn With Text, Images, and Sound</h2>
+      </div>
+
+      <figure class="screenshot-frame">
+        <img src="images/promotion_screenshot.png" alt="Screenshot of the Instrument Explorer app interface">
+        <figcaption>
+          The app menu is populated from JSON data, so each topic can be changed without rebuilding the page.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="feature-grid" aria-label="App features">
+      <article class="feature-card">
+        <h2>Dynamic Lessons</h2>
+        <p>Topics are loaded from a JSON file and displayed in an interactive menu.</p>
+      </article>
+
+      <article class="feature-card">
+        <h2>Audio Support</h2>
+        <p>Each instrument includes a playable audio example for a richer learning experience.</p>
+      </article>
+
+      <article class="feature-card">
+        <h2>Offline Ready</h2>
+        <p>The manifest and service worker let users install the app and revisit cached content offline.</p>
+      </article>
+    </section>
+
+    <section class="promo-section install-panel" id="install">
+      <div>
+        <p class="eyebrow">Download</p>
+        <h2>How To Install The App</h2>
+        <ol class="steps-list">
+          <li>Open the web app in Chrome or Edge.</li>
+          <li>Click the <strong>Install PWA</strong> button when it appears.</li>
+          <li>Confirm the browser install prompt.</li>
+          <li>Launch Instrument Explorer from your device like a regular app.</li>
+        </ol>
+      </div>
+
+      <div class="install-note">
+        <h2>Web Version</h2>
+        <p>
+          Users can also run the app directly in the browser without installing it.
+        </p>
+        <a class="install-button promo-link" href="index.html">Go To App</a>
+        <a class="secondary-link docs-link" href="documentation.html">Read Documentation</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

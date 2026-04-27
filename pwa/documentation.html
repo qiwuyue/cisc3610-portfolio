@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument Explorer Documentation</title>
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell promo-shell">
+    <header class="promo-hero">
+      <div class="promo-copy">
+        <p class="eyebrow">Documentation</p>
+        <h1>Instrument Explorer</h1>
+        <p class="subtitle">
+          This page explains what the app does, how users install it, and how programmers can
+          replace the JSON data with a new learning set.
+        </p>
+        <div class="promo-actions">
+          <a class="install-button promo-link" href="index.html">Open Web App</a>
+          <a class="secondary-link" href="promo.html">Promo Page</a>
+        </div>
+      </div>
+
+      <div class="promo-icon-card" aria-label="Instrument Explorer app icon">
+        <img src="icon-192.png" alt="Instrument Explorer music note icon">
+      </div>
+    </header>
+
+    <section class="docs-grid" aria-label="App documentation">
+      <article class="promo-section">
+        <p class="eyebrow">User Guide</p>
+        <h2>Features</h2>
+        <ul class="docs-list">
+          <li>Browse instrument topics from a dynamically generated menu.</li>
+          <li>Read short educational descriptions and fun facts.</li>
+          <li>View curated images for each instrument.</li>
+          <li>Play audio examples directly inside the app.</li>
+          <li>Install the app as a PWA and use cached content offline after the first visit.</li>
+        </ul>
+      </article>
+
+      <article class="promo-section">
+        <p class="eyebrow">Installation</p>
+        <h2>How To Install</h2>
+        <ol class="steps-list">
+          <li>Open <strong>index.html</strong> through the hosted website or Live Server.</li>
+          <li>Use Chrome or Edge for the best PWA install support.</li>
+          <li>Click the <strong>Install PWA</strong> button when it appears.</li>
+          <li>Confirm the browser install prompt.</li>
+          <li>Open the installed app from the desktop, start menu, or app launcher.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="promo-section">
+      <p class="eyebrow">Programmer Documentation</p>
+      <h2>How To Modify The Topic Dataset</h2>
+      <p class="docs-text">
+        The app reads its learning content from <strong>topics.json</strong>. To create a new
+        learning set, replace the existing objects with new topic objects that follow the same
+        structure. The app also includes <strong>custom-learning-set.json</strong> as a template
+        for user-related information and custom topic data.
+      </p>
+
+      <pre class="code-sample"><code>{
+  "id": 1,
+  "title": "Piano",
+  "category": "Keyboard",
+  "text": "The piano is a keyboard instrument that produces sound when keys are pressed.",
+  "image": "images/piano.png",
+  "audio": "audio/piano.mp3",
+  "fact": "A standard piano has 88 keys."
+}</code></pre>
+
+      <div class="field-grid">
+        <div>
+          <h2>Required Fields</h2>
+          <ul class="docs-list">
+            <li><strong>id:</strong> a unique number for the topic.</li>
+            <li><strong>title:</strong> the name shown in the topic menu.</li>
+            <li><strong>category:</strong> a short topic group or type.</li>
+            <li><strong>text:</strong> the main educational paragraph.</li>
+            <li><strong>image:</strong> the relative path to the topic image.</li>
+            <li><strong>audio:</strong> the relative path to the topic audio file.</li>
+            <li><strong>fact:</strong> a short extra fact displayed under the lesson.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Steps To Add A New Topic</h2>
+          <ol class="steps-list">
+            <li>Add the image file to the <strong>images</strong> folder.</li>
+            <li>Add the audio file to the <strong>audio</strong> folder.</li>
+            <li>Add a new object to <strong>topics.json</strong>.</li>
+            <li>Use lowercase file extensions, such as <strong>.png</strong> and <strong>.mp3</strong>.</li>
+            <li>Add the new image and audio paths to <strong>sw.js</strong> so they are available offline.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

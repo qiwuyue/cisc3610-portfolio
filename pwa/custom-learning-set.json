@@ -1,0 +1,23 @@
+{
+  "user": {
+    "name": "Student Name",
+    "role": "creator"
+  },
+  "learningSet": {
+    "title": "Instrument Explorer",
+    "description": "A custom learning set about musical instruments.",
+    "subject": "Music",
+    "version": "1.0"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "title": "Piano",
+      "category": "Keyboard",
+      "text": "The piano is a keyboard instrument that produces sound when keys are pressed.",
+      "image": "images/piano.png",
+      "audio": "audio/piano.mp3",
+      "fact": "A standard piano has 88 keys."
+    }
+  ]
+}

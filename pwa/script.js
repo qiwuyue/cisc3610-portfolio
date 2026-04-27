@@ -11,7 +11,7 @@ let topics = [];
 fetch("topics.json")
   .then(response => response.json())
   .then(data => {
-    topics = data;
+    topics = data.topics || [];
     renderMenu(topics);
 
     if (topics.length > 0) {
@@ -28,8 +28,10 @@ function renderMenu(items) {
 
   items.forEach(topic => {
     const button = document.createElement("button");
-    button.className = "list-group-item list-group-item-action";
+    button.className = "topic-button";
+    button.type = "button";
     button.textContent = topic.title;
+    button.dataset.topicId = topic.id;
 
     button.addEventListener("click", () => {
       showTopic(topic);
@@ -40,6 +42,10 @@ function renderMenu(items) {
 }
 
 function showTopic(topic) {
+  document.querySelectorAll(".topic-button").forEach(button => {
+    button.classList.toggle("active", Number(button.dataset.topicId) === topic.id);
+  });
+
   titleEl.textContent = topic.title;
   categoryEl.textContent = `Category: ${topic.category}`;
   textEl.textContent = topic.text;
@@ -56,6 +62,7 @@ function showTopic(topic) {
   if (topic.audio) {
     audioEl.src = topic.audio;
     audioEl.style.display = "block";
+    audioEl.load();
   } else {
     audioEl.style.display = "none";
   }
