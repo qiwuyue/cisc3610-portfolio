@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <ul class="nav nav-pills mx-auto gap-3">
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="summary.html">Summary</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="education.html">Education</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="experience.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="activities.html">Activities</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize active" href="projects.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold fs-6 text-capitalize" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h1>Portfolio</h1>
+        <div class="card shadow-sm border-0 rounded-4 p-4 mt-4">
+            <h2 class="h4 fw-bold">CISC 3610 Portfolio</h2>
+            <p class="text-secondary">
+                This portfolio collects my coursework projects, including canvas drawing, multimedia dictionary,
+                Bootstrap layout practice, PWA work, and video assignments. It shows my practice with HTML, CSS,
+                JavaScript, Bootstrap, and basic web project organization.
+            </p>
+
+            <div class="d-flex gap-3 flex-wrap">
+                <a class="btn btn-dark rounded-pill px-4" href="../index.html">Open Full Portfolio</a>
+                <a class="btn btn-outline-dark rounded-pill px-4"
+                    href="https://github.com/qiwuyue/cisc3610-portfolio/">GitHub Repository</a>
+            </div>
+        </div>
+
+        <div id="portfolioCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Cartoon project"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"
+                    aria-label="Multimedia Dictionary project"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"
+                    aria-label="Bootstrap project"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="3"
+                    aria-label="PWA project"></button>
+                <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="4"
+                    aria-label="Video project"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow-sm">
+                <div class="carousel-item active">
+                    <div class="portfolio-slide">
+                        <p class="small text-uppercase fw-semibold mb-2">Canvas Project</p>
+                        <h2 class="fw-bold">Cartoon Drawing</h2>
+                        <p>
+                            A canvas-based drawing project that practices shapes, colors, positioning, and basic visual
+                            composition with HTML canvas.
+                        </p>
+                        <a class="btn btn-light rounded-pill px-4"
+                            href="https://qiwuyue.github.io/cisc3610-portfolio/Canvas/cartoon.html">View Project</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="portfolio-slide">
+                        <p class="small text-uppercase fw-semibold mb-2">Multimedia Project</p>
+                        <h2 class="fw-bold">Multimedia Dictionary</h2>
+                        <p>
+                            A dictionary-style webpage that combines text, images, audio, and video to present
+                            information in an interactive format.
+                        </p>
+                        <a class="btn btn-light rounded-pill px-4"
+                            href="https://qiwuyue.github.io/cisc3610-portfolio/Multimedia Dictionary/index.html">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="portfolio-slide">
+                        <p class="small text-uppercase fw-semibold mb-2">Layout Project</p>
+                        <h2 class="fw-bold">Bootstrap Practice</h2>
+                        <p>
+                            A Bootstrap layout project focused on responsive design, navigation, spacing, and reusable
+                            interface components.
+                        </p>
+                        <a class="btn btn-light rounded-pill px-4"
+                            href="https://qiwuyue.github.io/cisc3610-portfolio/bootstrap/index.html">View Project</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="portfolio-slide">
+                        <p class="small text-uppercase fw-semibold mb-2">Web App Project</p>
+                        <h2 class="fw-bold">PWA</h2>
+                        <p>
+                            A progressive web app assignment that explores web app structure, responsive behavior, and
+                            browser-based application features.
+                        </p>
+                        <a class="btn btn-light rounded-pill px-4"
+                            href="https://qiwuyue.github.io/cisc3610-portfolio/pwa/index.html">View Project</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="portfolio-slide">
+                        <p class="small text-uppercase fw-semibold mb-2">Video Project</p>
+                        <h2 class="fw-bold">Video Animation</h2>
+                        <p>
+                            A video assignment that practices multimedia editing, animation concepts, and web-based
+                            presentation of video content.
+                        </p>
+                        <a class="btn btn-light rounded-pill px-4"
+                            href="https://qiwuyue.github.io/cisc3610-portfolio/Video/video_animation.html">View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
