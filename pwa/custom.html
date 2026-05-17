@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Learning Set</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="theme-color" content="#0d6efd">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Custom Learning Set</p>
+        <h1>Study Set Builder</h1>
+        <p class="subtitle">Manage your own topics and save them in this browser with local storage.</p>
+      </div>
+
+      <div class="header-actions">
+        <a class="secondary-link" href="index.html">Back To App</a>
+        <a class="secondary-link" href="promo.html">Home</a>
+      </div>
+    </header>
+
+    <section class="custom-builder custom-manager" aria-label="Manage custom learning topics">
+      <div>
+        <p class="eyebrow">My Topics</p>
+        <h2>Saved Custom Topics</h2>
+        <p class="builder-note">
+          Add a topic with your own media. These topics appear in the main app together with the default lessons.
+        </p>
+      </div>
+
+      <div class="manager-panel">
+        <div class="form-actions manager-actions">
+          <button id="openTopicModal" class="install-button" type="button">Add Topic</button>
+          <button id="clearCustomTopics" class="secondary-button" type="button">Clear Custom Topics</button>
+        </div>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+        <div id="customTopicList" class="custom-topic-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="topicDialog" class="topic-dialog" aria-labelledby="dialogTitle">
+    <form id="topicForm" class="topic-form dialog-form">
+      <div class="dialog-header full-span">
+        <div>
+          <p class="eyebrow">New Topic</p>
+          <h2 id="dialogTitle">Add Topic</h2>
+        </div>
+        <button id="closeTopicModal" class="icon-button" type="button" aria-label="Close dialog">x</button>
+      </div>
+
+      <label>
+        Title
+        <input id="customTitle" type="text" required placeholder="Example: Saxophone">
+      </label>
+
+      <label>
+        Category
+        <input id="customCategory" type="text" required placeholder="Example: Woodwind">
+      </label>
+
+      <label class="full-span">
+        Lesson Text
+        <textarea id="customText" rows="4" required placeholder="Write a short learning note."></textarea>
+      </label>
+
+      <label class="full-span">
+        Fun Fact
+        <input id="customFact" type="text" required placeholder="Add one memorable fact.">
+      </label>
+
+      <label>
+        Upload Image
+        <input id="customImage" type="file" accept="image/*">
+      </label>
+
+      <label>
+        Upload Audio Or Video
+        <input id="customMedia" type="file" accept="audio/*,video/*">
+      </label>
+
+      <div class="form-actions full-span">
+        <button id="saveTopicButton" class="install-button" type="submit">Save Topic</button>
+        <button id="cancelTopicModal" class="secondary-button" type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="deleteDialog" class="confirm-dialog" aria-labelledby="deleteDialogTitle">
+    <div class="confirm-panel">
+      <p class="eyebrow">Delete Topic</p>
+      <h2 id="deleteDialogTitle">Delete this topic?</h2>
+      <p id="deleteDialogText" class="docs-text"></p>
+      <div class="form-actions">
+        <button id="confirmDeleteTopic" class="danger-button" type="button">Delete</button>
+        <button id="cancelDeleteTopic" class="secondary-button" type="button">Cancel</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="custom.js"></script>
+</body>
+</html>

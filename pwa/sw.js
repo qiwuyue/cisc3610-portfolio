@@ -1,12 +1,14 @@
-const CACHE_NAME = "instrument-explorer-v5";
+const CACHE_NAME = "instrument-explorer-v8";
 
 const urlsToCache = [
   "./",
   "./index.html",
+  "./custom.html",
   "./promo.html",
   "./documentation.html",
   "./style.css",
   "./script.js",
+  "./custom.js",
   "./topics.json",
   "./custom-learning-set.json",
   "./manifest.json",

@@ -21,6 +21,7 @@
         <div class="promo-actions">
           <a class="install-button promo-link" href="index.html">Open Web App</a>
           <a class="secondary-link" href="promo.html">Promo Page</a>
+          <a class="secondary-link" href="https://github.com/qiwuyue/cisc3610-portfolio" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
@@ -38,6 +39,7 @@
           <li>Read short educational descriptions and fun facts.</li>
           <li>View curated images for each instrument.</li>
           <li>Play audio examples directly inside the app.</li>
+          <li>Open a custom learning set page to add, edit, or delete user-created topics.</li>
           <li>Install the app as a PWA and use cached content offline after the first visit.</li>
         </ul>
       </article>
@@ -62,7 +64,10 @@
         The app reads its learning content from <strong>topics.json</strong>. To create a new
         learning set, replace the existing objects with new topic objects that follow the same
         structure. The app also includes <strong>custom-learning-set.json</strong> as a template
-        for user-related information and custom topic data.
+        for user-related information and custom topic data. Inside the PWA, users can open
+        <strong>Manage Custom Set</strong> to manage their own topics without editing files. New topics
+        are added through a popup form, and user-created topics can be edited or deleted from the
+        same page. The custom learning set is stored in the browser with <strong>localStorage</strong>.
       </p>
 
       <pre class="code-sample"><code>{

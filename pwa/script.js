@@ -5,13 +5,19 @@ const imageEl = document.getElementById("image");
 const textEl = document.getElementById("text");
 const factEl = document.getElementById("fact");
 const audioEl = document.getElementById("audio");
+const videoEl = document.getElementById("video");
+
+const STORAGE_KEY = "instrumentExplorerCustomTopics";
 
 let topics = [];
+let defaultTopics = [];
+let customTopics = loadCustomTopics();
 
 fetch("topics.json")
   .then(response => response.json())
   .then(data => {
-    topics = data.topics || [];
+    defaultTopics = data.topics || [];
+    topics = [...defaultTopics, ...customTopics];
     renderMenu(topics);
 
     if (topics.length > 0) {
@@ -43,7 +49,7 @@ function renderMenu(items) {
 
 function showTopic(topic) {
   document.querySelectorAll(".topic-button").forEach(button => {
-    button.classList.toggle("active", Number(button.dataset.topicId) === topic.id);
+    button.classList.toggle("active", button.dataset.topicId === String(topic.id));
   });
 
   titleEl.textContent = topic.title;
@@ -64,7 +70,26 @@ function showTopic(topic) {
     audioEl.style.display = "block";
     audioEl.load();
   } else {
+    audioEl.removeAttribute("src");
     audioEl.style.display = "none";
+  }
+
+  if (topic.video) {
+    videoEl.src = topic.video;
+    videoEl.style.display = "block";
+    videoEl.load();
+  } else {
+    videoEl.removeAttribute("src");
+    videoEl.style.display = "none";
+  }
+}
+
+function loadCustomTopics() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  } catch (error) {
+    console.error("Error loading custom topics:", error);
+    return [];
   }
 }
 
